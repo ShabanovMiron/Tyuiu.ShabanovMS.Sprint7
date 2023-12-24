@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormAbout_SMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAbout_SMS.Designer.cs">
+      <DependentUpon>FormAbout_SMS.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMain_SMS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +60,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAbout_SMS.resx">
+      <DependentUpon>FormAbout_SMS.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMain_SMS.resx">
       <DependentUpon>FormMain_SMS.cs</DependentUpon>
     </EmbeddedResource>

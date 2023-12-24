@@ -10,13 +10,11 @@ using System.Windows.Forms;
 
 namespace Project.V3
 {
-    public partial class FormMain_SMS : Form
+    public partial class FormAbout_SMS : Form
     {
-        public FormMain_SMS()
+        public FormAbout_SMS()
         {
             InitializeComponent();
         }
-
-        
     }
 }

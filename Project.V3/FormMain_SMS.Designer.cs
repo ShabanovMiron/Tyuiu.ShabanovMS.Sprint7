@@ -206,7 +206,6 @@ namespace Project.V3
             this.dataGridViewFile_SMS.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewFile_SMS.Location = new System.Drawing.Point(0, 0);
             this.dataGridViewFile_SMS.Name = "dataGridViewFile_SMS";
-            this.dataGridViewFile_SMS.ReadOnly = true;
             this.dataGridViewFile_SMS.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.dataGridViewFile_SMS.RowHeadersVisible = false;
             this.dataGridViewFile_SMS.Size = new System.Drawing.Size(867, 491);

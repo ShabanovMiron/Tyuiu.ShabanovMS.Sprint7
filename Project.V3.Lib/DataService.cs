@@ -8,26 +8,52 @@ namespace Project.V3.Lib
 {
     public class DataService
     {
-        public string [,] GetMatrix(string path)
+
+        public string[,] GetMatrix(string path)
         {
-            string file = File.ReadAllText(path);
-            file = file.Replace('\n', '\r');
-            string[] lines = file.Split(new char[] { '\r' }, StringSplitOptions.RemoveEmptyEntries);
+            string fileData = File.ReadAllText(path);
+            fileData = fileData.Replace('\n', '\r');
+            string[] lines = fileData.Split(new char[] { '\r' }, StringSplitOptions.RemoveEmptyEntries);
 
             int rows = lines.Length;
             int columns = lines[0].Split(';').Length;
 
-            string[,] resArray = new string[rows, columns];
 
-            for (int i = 0; i < rows; i++)
+            string[,] arrayValues = new string[rows, columns];
+
+            for (int r = 0; r < rows; r++)
             {
-                string[] line_mas = lines[i].Split(';');
-                for (int j = 0; j < columns; j++)
+                string[] line_r = lines[r].Split(';');
+
+                for (int c = 0; c < columns; c++)
                 {
-                    resArray[i, j] = line_mas[j];
+                    arrayValues[r, c] = line_r[c];
                 }
             }
-            return resArray;
+            return arrayValues;
+        }
+
+        public bool AddRow(string path, string[] array)
+        {
+            bool add = false;
+
+            string str = "";
+
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (i != array.Length - 1)
+                {
+                    str = str + array[i] + ";";
+                }
+                else
+                {
+                    str = str + array[i];
+                }
+            }
+            File.AppendAllText(path, str + Environment.NewLine, Encoding.UTF8);
+            add = true;
+
+            return add;
         }
     }
 }

@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -52,19 +53,37 @@
     <Compile Include="FormAbout_SMS.Designer.cs">
       <DependentUpon>FormAbout_SMS.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormDiagram_SMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDiagram_SMS.Designer.cs">
+      <DependentUpon>FormDiagram_SMS.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMain_SMS.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormMain_SMS.Designer.cs">
       <DependentUpon>FormMain_SMS.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormManual_SMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormManual_SMS.Designer.cs">
+      <DependentUpon>FormManual_SMS.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormAbout_SMS.resx">
       <DependentUpon>FormAbout_SMS.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormDiagram_SMS.resx">
+      <DependentUpon>FormDiagram_SMS.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMain_SMS.resx">
       <DependentUpon>FormMain_SMS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormManual_SMS.resx">
+      <DependentUpon>FormManual_SMS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

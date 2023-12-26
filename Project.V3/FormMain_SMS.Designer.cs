@@ -29,6 +29,8 @@ namespace Project.V3
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain_SMS));
             this.groupBoxButtons_SMS = new System.Windows.Forms.GroupBox();
             this.buttonDiagram_SMS = new System.Windows.Forms.Button();
             this.buttonManual_SMS = new System.Windows.Forms.Button();
@@ -58,6 +60,7 @@ namespace Project.V3
             this.panelTop_SMS = new System.Windows.Forms.Panel();
             this.panelLeft_SMS = new System.Windows.Forms.Panel();
             this.panelRight_SMS = new System.Windows.Forms.Panel();
+            this.toolTipHelp_SMS = new System.Windows.Forms.ToolTip(this.components);
             this.groupBoxButtons_SMS.SuspendLayout();
             this.groupBoxTask_SMS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFile_SMS)).BeginInit();
@@ -89,13 +92,16 @@ namespace Project.V3
             // buttonDiagram_SMS
             // 
             this.buttonDiagram_SMS.BackColor = System.Drawing.Color.PaleGreen;
+            this.buttonDiagram_SMS.Enabled = false;
             this.buttonDiagram_SMS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDiagram_SMS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonDiagram_SMS.Image = ((System.Drawing.Image)(resources.GetObject("buttonDiagram_SMS.Image")));
             this.buttonDiagram_SMS.Location = new System.Drawing.Point(400, 22);
             this.buttonDiagram_SMS.Name = "buttonDiagram_SMS";
             this.buttonDiagram_SMS.Size = new System.Drawing.Size(93, 58);
             this.buttonDiagram_SMS.TabIndex = 4;
-            this.buttonDiagram_SMS.Text = "Диаграммы";
+            this.buttonDiagram_SMS.TabStop = false;
+            this.toolTipHelp_SMS.SetToolTip(this.buttonDiagram_SMS, "Нажмите для просмотра диаграмм");
             this.buttonDiagram_SMS.UseVisualStyleBackColor = false;
             this.buttonDiagram_SMS.Click += new System.EventHandler(this.buttonDiagram_SMS_Click);
             // 
@@ -104,25 +110,30 @@ namespace Project.V3
             this.buttonManual_SMS.BackColor = System.Drawing.Color.PaleGreen;
             this.buttonManual_SMS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonManual_SMS.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonManual_SMS.Image = ((System.Drawing.Image)(resources.GetObject("buttonManual_SMS.Image")));
             this.buttonManual_SMS.Location = new System.Drawing.Point(1023, 23);
             this.buttonManual_SMS.Name = "buttonManual_SMS";
             this.buttonManual_SMS.Size = new System.Drawing.Size(90, 58);
             this.buttonManual_SMS.TabIndex = 3;
-            this.buttonManual_SMS.Text = "Руководство пользователя";
+            this.buttonManual_SMS.TabStop = false;
+            this.toolTipHelp_SMS.SetToolTip(this.buttonManual_SMS, "Нажмите для открытия руководства ");
             this.buttonManual_SMS.UseVisualStyleBackColor = false;
             this.buttonManual_SMS.Click += new System.EventHandler(this.buttonManual_SMS_Click);
             // 
             // textBoxSearch_SMS
             // 
+            this.textBoxSearch_SMS.Enabled = false;
             this.textBoxSearch_SMS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxSearch_SMS.Location = new System.Drawing.Point(656, 40);
             this.textBoxSearch_SMS.Name = "textBoxSearch_SMS";
             this.textBoxSearch_SMS.Size = new System.Drawing.Size(149, 21);
             this.textBoxSearch_SMS.TabIndex = 1;
+            this.toolTipHelp_SMS.SetToolTip(this.textBoxSearch_SMS, "Введите слово для поиска");
             // 
             // groupBoxTask_SMS
             // 
             this.groupBoxTask_SMS.Controls.Add(this.textBoxTask_SMS);
+            this.groupBoxTask_SMS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBoxTask_SMS.Location = new System.Drawing.Point(0, 99);
             this.groupBoxTask_SMS.Name = "groupBoxTask_SMS";
             this.groupBoxTask_SMS.Size = new System.Drawing.Size(1294, 56);
@@ -136,12 +147,13 @@ namespace Project.V3
             this.textBoxTask_SMS.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxTask_SMS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxTask_SMS.ForeColor = System.Drawing.Color.Black;
-            this.textBoxTask_SMS.Location = new System.Drawing.Point(7, 11);
+            this.textBoxTask_SMS.Location = new System.Drawing.Point(12, 19);
             this.textBoxTask_SMS.Multiline = true;
             this.textBoxTask_SMS.Name = "textBoxTask_SMS";
             this.textBoxTask_SMS.ReadOnly = true;
             this.textBoxTask_SMS.Size = new System.Drawing.Size(1287, 22);
             this.textBoxTask_SMS.TabIndex = 0;
+            this.textBoxTask_SMS.TabStop = false;
             this.textBoxTask_SMS.Text = "Разработать Desktop приложение на основе Windows Forms по предметной области. Все" +
     " данные должны храниться в формате файла CSV.";
             // 
@@ -149,18 +161,21 @@ namespace Project.V3
             // 
             this.buttonHelp_SMS.BackColor = System.Drawing.Color.PaleGreen;
             this.buttonHelp_SMS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonHelp_SMS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonHelp_SMS.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonHelp_SMS.Image = ((System.Drawing.Image)(resources.GetObject("buttonHelp_SMS.Image")));
             this.buttonHelp_SMS.Location = new System.Drawing.Point(1196, 23);
             this.buttonHelp_SMS.Name = "buttonHelp_SMS";
             this.buttonHelp_SMS.Size = new System.Drawing.Size(86, 59);
             this.buttonHelp_SMS.TabIndex = 0;
-            this.buttonHelp_SMS.Text = "Справка";
+            this.buttonHelp_SMS.TabStop = false;
+            this.toolTipHelp_SMS.SetToolTip(this.buttonHelp_SMS, "Нажмите для открытия справки");
             this.buttonHelp_SMS.UseVisualStyleBackColor = false;
             this.buttonHelp_SMS.Click += new System.EventHandler(this.buttonHelp_SMS_Click);
             // 
             // buttonSearch_SMS
             // 
             this.buttonSearch_SMS.BackColor = System.Drawing.Color.PaleGreen;
+            this.buttonSearch_SMS.Enabled = false;
             this.buttonSearch_SMS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSearch_SMS.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonSearch_SMS.Location = new System.Drawing.Point(811, 40);
@@ -168,20 +183,24 @@ namespace Project.V3
             this.buttonSearch_SMS.Size = new System.Drawing.Size(76, 21);
             this.buttonSearch_SMS.TabIndex = 0;
             this.buttonSearch_SMS.Text = "Поиск";
+            this.toolTipHelp_SMS.SetToolTip(this.buttonSearch_SMS, "Нажмите что бы выполнить поиск");
             this.buttonSearch_SMS.UseVisualStyleBackColor = false;
             this.buttonSearch_SMS.Click += new System.EventHandler(this.buttonSearch_SMS_Click);
             // 
             // buttonSave_SMS
             // 
             this.buttonSave_SMS.BackColor = System.Drawing.Color.PaleGreen;
+            this.buttonSave_SMS.Enabled = false;
             this.buttonSave_SMS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSave_SMS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonSave_SMS.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.buttonSave_SMS.Image = ((System.Drawing.Image)(resources.GetObject("buttonSave_SMS.Image")));
             this.buttonSave_SMS.Location = new System.Drawing.Point(190, 22);
             this.buttonSave_SMS.Name = "buttonSave_SMS";
             this.buttonSave_SMS.Size = new System.Drawing.Size(86, 59);
             this.buttonSave_SMS.TabIndex = 0;
-            this.buttonSave_SMS.Text = "Сохранить";
+            this.buttonSave_SMS.TabStop = false;
+            this.toolTipHelp_SMS.SetToolTip(this.buttonSave_SMS, "Нажимите для сохранения файла");
             this.buttonSave_SMS.UseVisualStyleBackColor = false;
             this.buttonSave_SMS.Click += new System.EventHandler(this.buttonSave_SMS_Click);
             // 
@@ -190,11 +209,13 @@ namespace Project.V3
             this.buttonOpenFile_SMS.BackColor = System.Drawing.Color.PaleGreen;
             this.buttonOpenFile_SMS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonOpenFile_SMS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonOpenFile_SMS.Location = new System.Drawing.Point(9, 22);
+            this.buttonOpenFile_SMS.Image = ((System.Drawing.Image)(resources.GetObject("buttonOpenFile_SMS.Image")));
+            this.buttonOpenFile_SMS.Location = new System.Drawing.Point(12, 21);
             this.buttonOpenFile_SMS.Name = "buttonOpenFile_SMS";
             this.buttonOpenFile_SMS.Size = new System.Drawing.Size(86, 59);
             this.buttonOpenFile_SMS.TabIndex = 0;
-            this.buttonOpenFile_SMS.Text = "Выбрать файл";
+            this.toolTipHelp_SMS.SetToolTip(this.buttonOpenFile_SMS, "Выберите файл, который хотите открыть");
+            this.buttonOpenFile_SMS.UseMnemonic = false;
             this.buttonOpenFile_SMS.UseVisualStyleBackColor = false;
             this.buttonOpenFile_SMS.Click += new System.EventHandler(this.buttonOpenFile_SMS_Click);
             // 
@@ -241,13 +262,16 @@ namespace Project.V3
             // buttonAdd_SMS
             // 
             this.buttonAdd_SMS.BackColor = System.Drawing.Color.PaleGreen;
+            this.buttonAdd_SMS.Enabled = false;
             this.buttonAdd_SMS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAdd_SMS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonAdd_SMS.Location = new System.Drawing.Point(220, 172);
+            this.buttonAdd_SMS.Image = ((System.Drawing.Image)(resources.GetObject("buttonAdd_SMS.Image")));
+            this.buttonAdd_SMS.Location = new System.Drawing.Point(229, 173);
             this.buttonAdd_SMS.Name = "buttonAdd_SMS";
-            this.buttonAdd_SMS.Size = new System.Drawing.Size(115, 60);
+            this.buttonAdd_SMS.Size = new System.Drawing.Size(83, 60);
             this.buttonAdd_SMS.TabIndex = 6;
-            this.buttonAdd_SMS.Text = "Добавить";
+            this.buttonAdd_SMS.TabStop = false;
+            this.toolTipHelp_SMS.SetToolTip(this.buttonAdd_SMS, "Нажмите для добавления в файл");
             this.buttonAdd_SMS.UseVisualStyleBackColor = false;
             this.buttonAdd_SMS.Click += new System.EventHandler(this.buttonAdd_SMS_Click);
             // 
@@ -298,38 +322,48 @@ namespace Project.V3
             // 
             // textBoxControlType_SMS
             // 
+            this.textBoxControlType_SMS.Enabled = false;
             this.textBoxControlType_SMS.Location = new System.Drawing.Point(7, 330);
             this.textBoxControlType_SMS.Name = "textBoxControlType_SMS";
             this.textBoxControlType_SMS.Size = new System.Drawing.Size(100, 21);
             this.textBoxControlType_SMS.TabIndex = 4;
+            this.toolTipHelp_SMS.SetToolTip(this.textBoxControlType_SMS, "Введите тип контроля для добавления");
             // 
             // textBoxClass_SMS
             // 
+            this.textBoxClass_SMS.Enabled = false;
             this.textBoxClass_SMS.Location = new System.Drawing.Point(7, 256);
             this.textBoxClass_SMS.Name = "textBoxClass_SMS";
             this.textBoxClass_SMS.Size = new System.Drawing.Size(100, 21);
             this.textBoxClass_SMS.TabIndex = 3;
+            this.toolTipHelp_SMS.SetToolTip(this.textBoxClass_SMS, "Введите аудиторию для добавления");
             // 
             // textBoxDiscipline_SMS
             // 
+            this.textBoxDiscipline_SMS.Enabled = false;
             this.textBoxDiscipline_SMS.Location = new System.Drawing.Point(7, 193);
             this.textBoxDiscipline_SMS.Name = "textBoxDiscipline_SMS";
             this.textBoxDiscipline_SMS.Size = new System.Drawing.Size(100, 21);
             this.textBoxDiscipline_SMS.TabIndex = 2;
+            this.toolTipHelp_SMS.SetToolTip(this.textBoxDiscipline_SMS, "Введите дисциплину для добавления");
             // 
             // textBoxPost_SMS
             // 
+            this.textBoxPost_SMS.Enabled = false;
             this.textBoxPost_SMS.Location = new System.Drawing.Point(7, 125);
             this.textBoxPost_SMS.Name = "textBoxPost_SMS";
             this.textBoxPost_SMS.Size = new System.Drawing.Size(100, 21);
             this.textBoxPost_SMS.TabIndex = 1;
+            this.toolTipHelp_SMS.SetToolTip(this.textBoxPost_SMS, "Введите должность для добавления");
             // 
             // textBoxFIO_SMS
             // 
+            this.textBoxFIO_SMS.Enabled = false;
             this.textBoxFIO_SMS.Location = new System.Drawing.Point(7, 47);
             this.textBoxFIO_SMS.Name = "textBoxFIO_SMS";
             this.textBoxFIO_SMS.Size = new System.Drawing.Size(100, 21);
             this.textBoxFIO_SMS.TabIndex = 0;
+            this.toolTipHelp_SMS.SetToolTip(this.textBoxFIO_SMS, "Введите ФИО для добавления");
             // 
             // panelTop_SMS
             // 
@@ -359,6 +393,11 @@ namespace Project.V3
             this.panelRight_SMS.Name = "panelRight_SMS";
             this.panelRight_SMS.Size = new System.Drawing.Size(867, 491);
             this.panelRight_SMS.TabIndex = 6;
+            // 
+            // toolTipHelp_SMS
+            // 
+            this.toolTipHelp_SMS.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.toolTipHelp_SMS.ToolTipTitle = "Подсказка";
             // 
             // FormMain_SMS
             // 
@@ -419,6 +458,7 @@ namespace Project.V3
         private System.Windows.Forms.Panel panelRight_SMS;
         private System.Windows.Forms.Button buttonManual_SMS;
         private System.Windows.Forms.Button buttonDiagram_SMS;
+        private System.Windows.Forms.ToolTip toolTipHelp_SMS;
     }
 }
 

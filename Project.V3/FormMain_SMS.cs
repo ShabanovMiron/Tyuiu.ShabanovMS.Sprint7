@@ -61,6 +61,18 @@ namespace Project.V3
                 }
             }
             Matrix = ds.GetMatrix(openPathFile);
+
+            buttonDiagram_SMS.Enabled = true;
+            buttonAdd_SMS.Enabled = true;
+            buttonSave_SMS.Enabled = true;
+            buttonSearch_SMS.Enabled = true;
+
+            textBoxClass_SMS.Enabled = true;
+            textBoxControlType_SMS.Enabled = true;
+            textBoxDiscipline_SMS.Enabled = true; 
+            textBoxFIO_SMS.Enabled = true;
+            textBoxPost_SMS.Enabled = true;
+            textBoxSearch_SMS.Enabled = true;
         }
 
         private void buttonHelp_SMS_Click(object sender, EventArgs e)
